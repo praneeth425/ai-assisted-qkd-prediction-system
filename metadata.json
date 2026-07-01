@@ -1,0 +1,6 @@
+{
+  "name": "AI-Assisted Quantum Key Distribution (QKD) Prediction System",
+  "description": "An AI-powered performance prediction and BB84 simulation platform for Quantum Key Distribution (QKD) networks, featuring realistic channel analysis, Machine Learning QBER prediction, and dynamic quantum channel visualizations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
