@@ -15,7 +15,9 @@ import {
   FileText, 
   Settings, 
   Zap,
-  Sparkles
+  Sparkles,
+  Network,
+  History
 } from "lucide-react";
 import { ActiveTab } from "../types";
 
@@ -29,8 +31,10 @@ export default function Sidebar({ activeTab, setActiveTab, systemHealth }: Sideb
   const menuItems = [
     { id: 'landing', label: 'Home / Welcome', icon: Home },
     { id: 'simulation', label: 'BB84 Simulation', icon: Cpu },
+    { id: 'multi-sender', label: 'Multi-Sender QKD', icon: Network },
     { id: 'visualization', label: 'Quantum Channel', icon: Radio },
     { id: 'prediction', label: 'ML QBER Predictor', icon: Brain },
+    { id: 'temporal-analysis', label: 'Temporal QBER Analysis', icon: History },
     { id: 'dataset', label: 'Quantum Dataset', icon: Database },
     { id: 'analytics', label: 'Analytics & Charts', icon: LineChart },
     { id: 'model-details', label: 'AI Model Details', icon: ShieldCheck },

@@ -100,4 +100,6 @@ export type ActiveTab =
   | 'analytics'
   | 'model-details'
   | 'results'
-  | 'settings';
+  | 'settings'
+  | 'multi-sender'
+  | 'temporal-analysis';

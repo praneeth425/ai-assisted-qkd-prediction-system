@@ -33,6 +33,8 @@ import AnalyticsPage from "./components/AnalyticsPage";
 import ModelDetailsPage from "./components/ModelDetailsPage";
 import ResultsPage from "./components/ResultsPage";
 import SettingsPage from "./components/SettingsPage";
+import MultiSenderPage from "./components/MultiSenderPage";
+import TemporalPage from "./components/TemporalPage";
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<ActiveTab>("landing");
@@ -372,6 +374,12 @@ export default function App() {
                   onRefresh={fetchDatasetAndMetrics} 
                   datasetSize={dataset.length} 
                 />
+              )}
+              {activeTab === 'multi-sender' && (
+                <MultiSenderPage />
+              )}
+              {activeTab === 'temporal-analysis' && (
+                <TemporalPage />
               )}
             </motion.div>
           </AnimatePresence>
